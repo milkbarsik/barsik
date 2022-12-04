@@ -1,0 +1,228 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #081227;
+    margin: 0;
+    min-height: 100%;
+}
+:root {
+    --index: calc(1vw + 1vh)
+}
+.head {
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.welcome_image {
+    background: url("foto/fon2.jpg") 0/ cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+}
+.welcome_text {
+    font-size: calc(var(--index)*1.6);
+    padding-top: 30vh;
+    margin-left: 55vw;
+    color: rgb(220, 247, 255);
+    text-shadow:0 0 30px rgb(88, 216, 255);
+    text-shadow:0 0 15px rgb(141, 228, 255);
+}
+h1 {
+    letter-spacing: calc(var(--index)*0.1);
+    font-weight: 900;
+}
+.content {
+    position: relative;
+    background-color: #081227;
+    padding: 0px;
+    margin: 0;
+}
+article {
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    transform: translate(0, -100%);
+    background: linear-gradient(180deg,rgb(8, 18, 39, 0)30%, #081227 100%);
+}
+.sound {
+    background-image: url("foto/wallpapershq_jellyfish-underwater-world-invertebrates_204.jpg");
+		background-attachment: fixed;
+		background-position: top;
+    background-size: cover;
+		background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+section {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.button {
+    border:2px solid rgb(0, 24, 88);
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: initial;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(0, 24, 88);
+}
+.button:hover{
+    opacity: 0.7;
+}
+.progress {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: initial;
+}
+progress {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+}
+progress::-webkit-progress-bar {
+    background-color: rgb(209, 232, 253);
+    border-radius: 5px;
+}
+progress::-webkit-progress-value {
+    background-color: rgb(86, 255, 255);
+    border-radius: 5px;
+} 
+#d2 progress::-webkit-progress-value{
+    background-color: rgb(77, 234, 255);
+}
+#d3 progress::-webkit-progress-value{
+    background-color: rgb(78, 220, 255);
+}
+#video {
+    background-image: url("foto/Underwater-5385.webp");
+    background-size: cover;
+    padding: 10px;
+    border-radius: 5px;
+}
+.parallax {
+	position: relative;
+	min-height: 70vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.parallax_wrapper{
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+	margin: 0%;
+}
+
+.back_image{
+	height: 70vh;
+	width: 100%;
+	margin: 5vh auto;
+}
+.sea2 {
+    opacity: 1;
+    animation: ani1 2s forwards;
+}
+  @keyframes ani1 {
+    0% {opacity: 1;
+        padding-bottom: 10px;}
+    100% {opacity: 0;
+        padding-top: 160px;
+        padding-bottom: 370px;}
+}
+.sea1    {
+    opacity: 1;
+    animation: ani 2s forwards;
+}
+  @keyframes ani {
+    0% {opacity: 0;
+        padding-top: 160px;
+        padding-bottom: 370px;}
+    100% {opacity: 1;
+    padding-bottom: 10px;}
+}
+
+#sea1 {
+background-color: rgb(133, 241, 255);
+min-height: auto;
+background: url("foto/night-water-space-underwater-bubbles-circle-241362-wallhere.com.jpg") top/cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+padding: 10px 0px 10px 0px;
+}
+.circle {
+    background-color: rgb(61, 210, 255);
+    padding-top: 10%;
+    width: 10%;
+    border: 3px solid #0f2f44;
+    border-radius: 50%;
+    display: inline-block;  
+}
+.num0 {
+    background-color: initial;
+    animation: num0 4s linear forwards;
+    opacity: 0;
+}
+.num1 {
+    animation: num1 0.5s forwards;
+}
+.num2 {
+    animation: num2 0.5s forwards;
+}
+.num3 {
+    animation: num3 0.5s forwards;
+}
+.num4 {
+    background-color: rgb(7, 63, 95);;
+    animation: num4 1s forwards;
+}
+@keyframes num0 {
+    from {
+        opacity: 0;
+        background-color: rgb(7, 63, 95);;
+    }
+    40% {
+        opacity: 1;
+        background-color: rgb(15, 94, 131);
+    }
+    60% {
+        background-color: rgb(0, 151, 197);
+        opacity: 1;
+    }
+    to {
+        background-color: rgb(61, 210, 255);
+        opacity: 1;
+    }
+}
+@keyframes num1 {
+    0% {background-color: rgb(61, 210, 255);}
+    100% {background-color: rgb(0, 151, 197);}
+}
+@keyframes num2 {
+    0% {background-color: rgb(0, 151, 197);}
+    100% {background-color: rgb(15, 94, 131);}
+}
+@keyframes num3 {
+    0% {background-color: rgb(15, 94, 131);}
+    100% {background-color: rgb(7, 63, 95);}
+}
+@keyframes num4 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
